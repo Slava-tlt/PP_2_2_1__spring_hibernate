@@ -14,6 +14,9 @@ public class Car {
 
     private int series;
 
+    @OneToOne(mappedBy = "userCar")
+    private User user;
+
     public Car() {
     }
 
